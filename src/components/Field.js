@@ -2,8 +2,6 @@ import React from 'react';
 import LanguageContext from '../contexts/LanguageContext';
 
 class Field extends React.Component {
-    static contextType = LanguageContext;
-
     renderLabel = value => {
         return value === 'english' ? 'Name' : 'Naam';
     }
